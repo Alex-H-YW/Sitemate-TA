@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+}
+.container.show{
+    background-color: rgb(61, 59, 59);
+}
+
+.dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.submitBtn {
+    background-color: #d3dfb9  ;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0px 2px 4px #74a3b0;
+    font-size: 20px;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 80px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #a2a4a4;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+.header {
+   display: flex;
+   align-content: space-between;
+}
+.header span {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modalTitle {
+    padding-bottom: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.modal.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.noBtn {
+    cursor: pointer;
+	border: 0;
+    border-radius: 10px;
+	padding: 15px 30px;
+	text-align: center;
+    background-color: #cb99c5;
+	color: white;
+    box-shadow: 0px 4px #AD83A8;
+    font-size: 16px;
+}
+
+
+.noBtn:active, .noBtn:hover {
+    box-shadow: 0 0 #BA8CB5; 
+    background-color: #BA8CB5;
+}
+
+.yesBtn {
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 50px;
+	border: 0;
+    border-radius: 10px;
+	padding: 15px 30px;
+	text-align: center;
+    background-color: #7fb1bf;
+	color: white;
+    box-shadow: 0px 4px #74a3b0;
+}
+
+.yesBtn:active, .yesBtn:hover {
+    box-shadow: 0 0 #74a3b0; 
+    background-color: #709CA8;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 44, 44, 0.5);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
