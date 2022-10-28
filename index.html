@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitemate-Assessment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -13,18 +14,21 @@
             <button class="submitBtn">Click me</button>
             <p class="text" id="text"></p>
         </div>
+    
         <div class="modal" id="modal">
             <div class="header">
-                <h2>
-                    Are you sure you want to continue?
-                </h2>
+                <div class="modalTitle"></div>
                 <span class="closeBtn">X</span>
             </div>
             <div class="dialogBtn">
-                <button class="yesBtn">Yes</button>
-                <button class="noBtn">No</button>
+                <button class="yesBtn"></button>
+                <button class="noBtn"></button>
             </div>
         </div>
+ 
     </div>
+    <div class=overlay></div>
+    
+    <script src="index.js"></script>
 </body>
 </html>
